@@ -1,0 +1,36 @@
+.button-opacity {
+  opacity: 1;
+}
+
+.button-normal {
+  opacity: 0;
+}
+
+.scroll__btn {
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 2rem;
+  transition: all ease-in-out;
+}
+
+.scroll__img {
+  width: 50px;
+  transition: ease-in-out 1s;
+}
+
+.scroll__img:hover {
+  transform: translateY(20px);
+}
+
+@media screen and (max-width: 680px) {
+  .scroll__img {
+    width: 40px;
+  }
+
+  .scroll__btn {
+    bottom: 2.5rem;
+    right: 1.2rem;
+  }
+}

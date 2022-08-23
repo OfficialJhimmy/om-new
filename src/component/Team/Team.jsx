@@ -8,7 +8,7 @@ import './Team.css'
 const Team = () => {
   return (
     <div className="meet__team">
-        <h2 className="heading-meet">The Team.</h2>
+        <h2 className="heading-meet">Our People.</h2>
         <div className="meet__team--container">
       <div className="meet__team--item">
         <img src={mrom} alt="team member" className="correct-img"/>

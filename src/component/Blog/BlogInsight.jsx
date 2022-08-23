@@ -1,15 +1,19 @@
 import React from "react";
-import "./BlogDetails.css";
-import { useParams } from "react-router-dom";
-import { blogData } from "../../component/Blog/BlogTestData";
+import "./BlogHome.css";
+import { blogInsightData } from "./BlogTestData";
+import ButtonOthers from "../Button/ButtonOthers";
+import {Link} from 'react-router-dom'
 
-const BlogDetails = () => {
-  const { id } = useParams();
+const BlogInsight = () => {
   return (
-    <div>
+    <section className="blog__home--container">
+      <div className="blog__home--top">
+        <h2 className="heading-main-blog">Our Latest Thoughts.</h2>
+      </div>
       <div className="blog__home--bottom">
-        {blogData.map((blog) => (
+        {blogInsightData.map((blog) => (
           <div key={blog.id} className="blog__home--item">
+            <Link to={blog.url}>
             <div className="blog__item--top">
               <img src={blog.img} alt="Blog Item" />
             </div>
@@ -19,14 +23,16 @@ const BlogDetails = () => {
             </div>
             <div className="blog__item--bottom">
               <p className="blog--paragraph">
-                {blog.content}
+                {blog.content.substring(0, 281)}
               </p>
+              <ButtonOthers title='Keep Reading...' url={blog.url}/>
             </div>
+            </Link>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default BlogDetails;
+export default BlogInsight;

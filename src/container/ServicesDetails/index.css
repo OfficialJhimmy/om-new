@@ -1,0 +1,151 @@
+.services__details {
+  padding: 100px 100px;
+}
+
+.reusable__grid--top,
+.reusable__grid--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.reusable__grid--bottom {
+  margin-bottom: 0;
+}
+
+.reusable__grid--asset {
+  margin-right: 30px;
+  width: 30%;
+}
+
+.reusable__grid--content {
+  width: 65%;
+  text-align: end;
+}
+
+.reusable__grid--content h2 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.reusable__grid--content p,
+.reusable__grid--bottom-content p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: end;
+}
+
+.reusable__grid--bottom-content {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.reusable__grid--bottom-content h2 {
+  font-size: 33px;
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.reusable__grid--bottom-content p {
+  text-align: start;
+}
+
+.reusable__grid--bottom-asset {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.reusable__grid--bottom-asset img {
+  width: 45%;
+  border-radius: 8px;
+}
+
+.u-margin-top {
+  margin-left: 20px;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  .services__details {
+    padding: 60px 20px;
+  }
+
+  .reusable__grid--top,
+  .reusable__grid--bottom {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .reusable__grid--bottom {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reusable__grid--asset {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reusable__grid--asset video {
+    height: 400px;
+  }
+
+  .reusable__grid--content {
+    width: 100%;
+    text-align: end;
+  }
+
+  .reusable__grid--content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .reusable__grid--content p,
+  .reusable__grid--bottom-content p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: start;
+  }
+
+  .reusable__grid--bottom-content {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .reusable__grid--bottom-content h2 {
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 15px;
+  }
+
+  .reusable__grid--bottom-content p {
+    text-align: start;
+  }
+
+  .reusable__grid--bottom-asset {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .reusable__grid--bottom-asset img {
+    /* width: 65%; */
+  }
+
+  .u-margin-top {
+    margin-left: 10px;
+    margin-top: 70px;
+  }
+}

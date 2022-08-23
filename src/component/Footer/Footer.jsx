@@ -42,34 +42,35 @@ const Footer = () => {
         </div>
         <div className="footer__child">
           <h3>Services</h3>
-          <Link to="/">
+          <Link to="/audit">
             <span>Audit & Assurance</span> <BsArrowUpRight />
+            {/* Audit & Assurance <BsArrowUpRight /> */}
           </Link>
-          <Link to="/">
+          <Link to="/tax">
             <span>Tax Auditory</span> <BsArrowUpRight />
           </Link>
-          <Link to="/">
+          <Link to="/consulting">
             <span>Consulting</span> <BsArrowUpRight />
           </Link>
-          <Link to="/">
+          <Link to="/cfo">
             <span>CFO Services</span> <BsArrowUpRight />
           </Link>
         </div>
         <div className="footer__child">
           <h3>Industries</h3>
-          <Link to="/">
+          <Link to="/industries">
             <span>Agriculture</span> <BsArrowUpRight />
           </Link>
-          <Link to="/">
+          <Link to="/industries">
             <span>Consumer Goods</span> <BsArrowUpRight />
           </Link>
-          <Link to="/">
+          <Link to="/industries">
             <span>Multi-Level Marketing</span> <BsArrowUpRight />
           </Link>
-          <Link to="/">
+          <Link to="/industries">
             <span>Gaming Sector</span> <BsArrowUpRight />
           </Link>
-          <Link to="/">
+          <Link to="/services">
             <span>Services</span> <BsArrowUpRight />
           </Link>
         </div>
@@ -87,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__bottom">
-        <h2 className="footer__bottom-content">
+        <div className="footer__bottom-content">
           <h3>Copyright &#169;2022. </h3>
           <p>
             O.M. ASSOCIATES was founded in June 2005 by a group of professionals
@@ -105,7 +106,7 @@ const Footer = () => {
             is to provide long-term results for our clients while also
             developing long-term connections with them.
           </p>
-        </h2>
+        </div>
       </div>
     </footer>
   );

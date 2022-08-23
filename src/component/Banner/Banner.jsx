@@ -7,7 +7,7 @@ import Idea from '../../assets/icons/light-bulb.png'
 
 const Banner = () => {
   return (
-    <div>
+    <>
       <div className="banner__hero">
         <video autoPlay loop muted className="banner__video">
           <source src={BannerVideo} type="video/mp4" />
@@ -28,7 +28,7 @@ const Banner = () => {
           <Button title='Our Insights' icon={Idea} url='/insights' />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

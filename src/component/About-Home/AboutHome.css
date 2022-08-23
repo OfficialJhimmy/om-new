@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  margin-bottom: 300px;
 }
 
 .about__home--left {
@@ -49,12 +50,13 @@
 
 .paragraph-about {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 1024px) {
   .about__home--container {
     display: block;
+    margin-bottom: 0;
   }
 
   .about__home--left {

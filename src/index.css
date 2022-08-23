@@ -253,7 +253,8 @@ input,
 ul,
 li,
 address,
-textarea {
+textarea,
+span {
   font-family: 'Euclid Circular A Regular';
 }
 

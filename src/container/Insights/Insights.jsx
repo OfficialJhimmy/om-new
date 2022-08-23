@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import ReusableBanner from "../../component/Banner/ReusableBanner";
+import bannerinsight from "../../assets/images/insight-banner.jpg";
+import BlogInsight from "../../component/Blog/BlogInsight";
+import Footer from "../../component/Footer/Footer";
+import Navbar from "../../component/Navigation/Navbar";
 
 const Insights = () => {
   return (
-    <div>Insights</div>
-  )
-}
+    <>
+      <Navbar />
+      <ReusableBanner
+        src={bannerinsight}
+        title="Our Thoughts"
+        paragraph="Ideas and Insights to inspire you on your journey. Find out what matters most to us, today and in the future."
+      />
+      <BlogInsight />
+      <Footer />
+    </>
+  );
+};
 
-export default Insights
+export default Insights;

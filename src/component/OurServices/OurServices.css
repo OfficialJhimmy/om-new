@@ -3,7 +3,7 @@
   color: #f8f8f8;
   display: flex;
   align-items: center;
-  margin-top: 300px;
+  /* margin-top: 300px; */
   padding: 100px 80px;
 }
 
@@ -16,12 +16,12 @@
   width: 50%;
 }
 
-.ourservices__item {
+.ourservices__item a{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: start;
+    text-align: center;
 }
 
 .ourservices__item img {
