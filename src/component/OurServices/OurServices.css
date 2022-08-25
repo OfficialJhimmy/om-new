@@ -72,11 +72,12 @@
   }
   
   .ourservices__heading {
-      font-size: 17px;
+      font-size: 18px;
+      /* font-weight: 700; */
   }
   
   .ourservices__item p {
-      font-size: 14px;
+      font-size: 13px;
   }
   
   .ourservices__grid--right {

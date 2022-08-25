@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../component/Button/Button";
 import "./BlogDetails.css";
-import next from "../../assets/icons/next.png";
+import next from "../../assets/icons/right-arrow.png";
 import blogimage from "../../assets/images/blog-random-big.webp";
 import Footer from "../../component/Footer/Footer";
 import Navbar from "../../component/Navigation/Navbar";
