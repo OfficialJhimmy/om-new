@@ -1,14 +1,16 @@
 import React from "react";
 import ReusableBanner from "../../component/Banner/ReusableBanner";
 import bannerauditing from "../../assets/images/banner-services.jpg";
-import video1 from "../../assets/videos/video-3-web.webm";
-import video1sub from "../../assets/videos/video-3-new.mp4";
+// import video1 from "../../assets/videos/video-3-web.webm";
+// import video1sub from "../../assets/videos/video-3-new.mp4";
+import image2 from '../../assets/images/new-2.webp'
 import image1 from "../../assets/images/image-8.webp";
-import about1 from "../../assets/images/image 64.png";
+import new3 from "../../assets/images/new-3.webp";
 import "./index.css";
 import GetStarted from "../../component/GetStarted/GetStarted";
 import Footer from "../../component/Footer/Footer";
 import Navbar from "../../component/Navigation/Navbar";
+import Subscribe from "../../component/Subscribe/Subscribe";
 
 const Consulting = () => {
   return (
@@ -23,11 +25,12 @@ const Consulting = () => {
       <div className="services__details">
         <div className="reusable__grid--top">
           <div className="reusable__grid--asset">
-            <video autoPlay loop muted>
+            {/* <video autoPlay loop muted>
               <source src={video1} type="video/webm" />
               <source src={video1sub} type="video/mp4" />
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <img src={image2} alt="Our Support" />
             {/* <img src={image2} alt="Our Office" /> */}
           </div>
           <div className="reusable__grid--content">
@@ -59,11 +62,12 @@ const Consulting = () => {
           </div>
           <div className="reusable__grid--bottom-asset">
             <img src={image1} alt="Audit" />
-            <img src={about1} alt="Our office" className="u-margin-top" />
+            <img src={new3} alt="Our office" className="u-margin-top" />
           </div>
         </div>
       </div>
       <GetStarted />
+      <Subscribe/>
       <Footer />
     </>
   );

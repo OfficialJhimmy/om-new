@@ -1,5 +1,5 @@
 import React from 'react'
-import imagetop from "../../assets/images/image 64.png";
+import imagetop from "../../assets/images/new-5.webp";
 import modupe from "../../assets/images/modupe.webp";
 import mrom from "../../assets/images/mrom-watch.webp";
 import splash from "../../assets/images/24.png";

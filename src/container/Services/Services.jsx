@@ -7,6 +7,7 @@ import Accordion from "../../component/Accordion/Accordion";
 import Footer from "../../component/Footer/Footer";
 import GetStarted from "../../component/GetStarted/GetStarted";
 import Navbar from "../../component/Navigation/Navbar";
+import Subscribe from "../../component/Subscribe/Subscribe";
 
 const Services = () => {
   return (
@@ -21,6 +22,7 @@ const Services = () => {
       <Financial />
       <GetStarted />
       <Accordion />
+      <Subscribe/>
       <Footer />
     </>
   );

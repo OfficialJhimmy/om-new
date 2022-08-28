@@ -3,12 +3,13 @@ import ReusableBanner from "../../component/Banner/ReusableBanner";
 import bannerauditing from "../../assets/images/banner-industries.jpg";
 import video1 from "../../assets/videos/video-2.webm";
 import video1sub from "../../assets/videos/video-2-sub.mp4";
-import image1 from "../../assets/images/image-7.webp";
+import image11 from "../../assets/images/image-11.jpg";
 import about1 from "../../assets/images/image-5.webp";
 import "./index.css";
 import GetStarted from "../../component/GetStarted/GetStarted";
 import Footer from "../../component/Footer/Footer";
 import Navbar from "../../component/Navigation/Navbar";
+import Subscribe from "../../component/Subscribe/Subscribe";
 
 const Cfo = () => {
   return (
@@ -60,12 +61,13 @@ const Cfo = () => {
             </p>
           </div>
           <div className="reusable__grid--bottom-asset">
-            <img src={image1} alt="Audit" />
+            <img src={image11} alt="Audit" />
             <img src={about1} alt="Our office" className="u-margin-top" />
           </div>
         </div>
       </div>
       <GetStarted />
+      <Subscribe />
       <Footer />
     </>
   );

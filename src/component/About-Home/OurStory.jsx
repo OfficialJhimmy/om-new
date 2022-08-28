@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutHome.css";
-import about1 from "../../assets/images/about-2.webp";
-import about2 from "../../assets/images/about-1.webp";
-import about3 from "../../assets/images/about-3.webp";
+import imagetop from "../../assets/images/new-5.webp";
+import modupe from "../../assets/images/modupe.webp";
+import mrom from "../../assets/images/mrom-watch.webp";
 import splash from "../../assets/images/Highlight_05 (1).png";
 
 const OurStory = () => {
@@ -10,13 +10,13 @@ const OurStory = () => {
     <section className="about__home--container">
       <div className="about__home--left">
         <div className="about__img-top">
-          <img src={about1} alt="about-om" className="image-top" />
+          <img src={imagetop} alt="about-om" className="image-top" />
         </div>
         <div className="about__img-middle">
-          <img src={about3} alt="about-om" />
+          <img src={mrom} alt="about-om" />
         </div>
         <div className="about__img-bottom">
-          <img src={about2} alt="about-om" />
+          <img src={modupe} alt="about-om" />
         </div>
       </div>
       <div className="about__home--right">

@@ -9,7 +9,7 @@
   font-size: 22px;
 }
 
-.connected__container--parent{
+.connected__container--parent {
   display: flex;
   align-items: center;
   width: 100%;
@@ -21,7 +21,7 @@
   width: 45%;
 }
 
-.connected__container--asset video {
+.connected__container--asset img {
   border-radius: 7px;
 }
 
@@ -51,36 +51,45 @@ textarea {
   font-size: 14px;
 }
 
+.input__box-button{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 20px;
+}
+
 .btn-input__box {
   background-color: #184e77;
   border-radius: 7px;
-  padding: 10px 16px;
+  padding: 20px 35px;
   color: #f8f9fa;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  /* width: 40%; */
 }
 
 .btn-input__box:hover {
   transform: scale(0.95);
 }
 
-
-
 @media screen and (max-width: 1024px) {
   .connected__container {
     padding: 60px 20px;
   }
-  
+
   .connected__container h2 {
     font-size: 17px;
   }
-  
-  .connected__container--parent{
+
+  .connected__container--parent {
     display: block;
     margin-top: 35px;
     gap: 40px;
   }
-  
+
   .connected__container--asset {
     width: 100%;
     display: flex;
@@ -91,20 +100,23 @@ textarea {
   .connected__container--asset video {
     width: 80%;
   }
-  
+
   .connected__container--content {
     width: 100%;
     margin-top: 40px;
   }
-  
+
   .input__box input,
   textarea {
     width: 100%;
     font-size: 13px;
   }
-  
+
   .input__box span {
     font-size: 13px;
   }
-  
+
+  .btn-input__box {
+    padding: 16px 30px;
+  }
 }

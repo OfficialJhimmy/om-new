@@ -5,6 +5,7 @@ import Navbar from "../../component/Navigation/Navbar";
 import OurIndustries from "../../component/Our-Industries/OurIndustries";
 import GetStarted from "../../component/GetStarted/GetStarted";
 import Footer from "../../component/Footer/Footer";
+import Subscribe from "../../component/Subscribe/Subscribe";
 const Industries = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Industries = () => {
       />
       <OurIndustries />
       <GetStarted />
+      <Subscribe/>
       <Footer />
     </>
   );

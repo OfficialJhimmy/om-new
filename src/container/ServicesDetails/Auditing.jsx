@@ -9,6 +9,7 @@ import "./index.css";
 import GetStarted from "../../component/GetStarted/GetStarted";
 import Footer from "../../component/Footer/Footer";
 import Navbar from "../../component/Navigation/Navbar";
+import Subscribe from "../../component/Subscribe/Subscribe";
 
 const Auditing = () => {
   return (
@@ -64,6 +65,7 @@ const Auditing = () => {
         </div>
       </div>
       <GetStarted />
+      <Subscribe />
       <Footer />
     </>
   );

@@ -16,14 +16,14 @@ import Auditing from "./container/ServicesDetails/Auditing";
 import Tax from "./container/ServicesDetails/Tax";
 import Consulting from "./container/ServicesDetails/Consulting";
 import Cfo from "./container/ServicesDetails/CFO";
-import Scrolltotop from './component/Scroll-to-top/index'
+// import Scrolltotop from './component/Scroll-to-top/index'
 import Success from "./component/Success/Success";
 // import BlogDetails from "./container/BlogDetails/BlogDetails";
 function App() {
   return (
     <div className="App">
       <Router>
-        <Scrolltotop/>
+        {/* <Scrolltotop/> */}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/insights" element={<Insights />} />

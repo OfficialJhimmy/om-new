@@ -1,6 +1,7 @@
 import React from "react";
 import "./Financial.css";
-import industriesvideo from "../../assets/videos/lady-chart.mp4";
+import industriesvideo from "../../assets/videos/video-2-web.webm";
+import industriesvideomp4 from "../../assets/videos/video-new-2.mp4";
 import { FiRefreshCw } from "react-icons/fi";
 import { BsSpeedometer2 } from "react-icons/bs";
 import { MdSupport } from "react-icons/md";
@@ -58,7 +59,8 @@ const Financial = () => {
       </div>
       <div className="financial__content-video">
         <video autoPlay loop muted height="600">
-          <source src={industriesvideo} type="video/mp4" />
+          <source src={industriesvideo} type="video/webm" />
+          <source src={industriesvideomp4} type="video/mp4" />
           Your browser does not support the Video tag.
         </video>
       </div>
