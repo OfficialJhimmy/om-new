@@ -10,7 +10,7 @@ const Subscribe = () => {
   return (
     <section className="subscribe-container">
       <h2 className="subscribe-heading">
-        Interested in getting ur weekly newletter? Why not Subscribe to our
+        Interested in getting our weekly newletter? Why not Subscribe to our
         Newsletter?
       </h2>
       <form action="" >
