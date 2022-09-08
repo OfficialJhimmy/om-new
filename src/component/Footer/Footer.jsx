@@ -44,7 +44,6 @@ const Footer = () => {
           <h3>Services</h3>
           <Link to="/audit">
             <span>Audit & Assurance</span> <BsArrowUpRight />
-            {/* Audit & Assurance <BsArrowUpRight /> */}
           </Link>
           <Link to="/tax">
             <span>Tax Auditory</span> <BsArrowUpRight />

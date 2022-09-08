@@ -6,13 +6,12 @@ function Button({ title, icon, url }) {
   return (
     <div className="button__wrapper">
       <Link to={url}>
-      <button>
-        <span>{title}</span>
+        <button>
+          <span>{title}</span>
 
-        <img src={icon} alt="button-icon" />
-      </button>
+          <img src={icon} alt="button-icon" />
+        </button>
       </Link>
-     
     </div>
   );
 }

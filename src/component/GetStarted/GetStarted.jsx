@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./GetStarted.css";
 // import video1 from "../../assets/videos/consultant-web.webm";
 // import video1sub from "../../assets/videos/consultant.mp4";
@@ -6,9 +7,30 @@ import customer from "../../assets/images/new-4.webp";
 import { useNavigate } from "react-router-dom";
 const GetStarted = () => {
   let navigate = useNavigate();
-  const submithandler = () => {
-    navigate("/success");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_eu9tqtm",
+        "template_x3gzmto",
+        form.current,
+        "user_sbyU4Dt8TSVqeFQYVAiXI"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          navigate("/success");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
+
   return (
     <>
       <div className="connected__container">
@@ -26,7 +48,7 @@ const GetStarted = () => {
             <img src={customer} alt="Customer support" />
           </div>
           <div className="connected__container--content">
-            <form action="" onSubmit={submithandler}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="input__box">
                 <span>Name</span>
                 <input
@@ -58,10 +80,14 @@ const GetStarted = () => {
               </div>
               <div className="input__box">
                 <span>Type a Message</span>
-                <textarea name="mesage" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
               </div>
               <div className="input__box-button">
-                <input type="submit" value="Send 👋" className="btn-input__box"/>
+                <input
+                  type="submit"
+                  value="Send 👋"
+                  className="btn-input__box"
+                />
                 {/* <button className="btn-input__box">Send 👋</button> */}
               </div>
             </form>
