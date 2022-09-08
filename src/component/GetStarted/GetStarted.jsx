@@ -15,10 +15,10 @@ const GetStarted = () => {
 
     emailjs
       .sendForm(
-        "service_eu9tqtm",
-        "template_x3gzmto",
+        "service_dtnnv0y",
+        "template_9tkw4ao",
         form.current,
-        "user_sbyU4Dt8TSVqeFQYVAiXI"
+        "l0j3ZXjPi7rfUjLGJ"
       )
       .then(
         (result) => {
