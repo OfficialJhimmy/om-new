@@ -7,6 +7,9 @@
 
 .insight-single__top {
   margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .insight-single__middle h3 {

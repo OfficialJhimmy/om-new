@@ -13,7 +13,17 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 40px;
-  width: 50%;
+  width: 60%;
+}
+
+.ourservices__item  {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 14px 17px;
+  transition: all ease-in-out 0.5s;
+}
+
+.ourservices__item:hover {
+  transform: scale(0.97);
 }
 
 .ourservices__item a{
@@ -38,7 +48,7 @@
 }
 
 .ourservices__grid--right {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

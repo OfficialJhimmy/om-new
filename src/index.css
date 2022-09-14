@@ -1,7 +1,6 @@
 /* FONTS */
 @font-face {
   font-family: "Buenos Aires";
-  /* src: url('BuenosAires-Thin.eot'); */
   src: url("/src/assets/fonts/BuenosAires/BuenosAires-Thin.eot");
   src: local("Buenos Aires Thin"), local("BuenosAires-Thin"),
     url("/src/assets/fonts/BuenosAires/BuenosAires-Thin.eot?#iefix")
@@ -80,11 +79,6 @@
 @font-face {
   font-family: "Euclid Circular A";
   src: url("/src/assets/fonts/EuclidCircularA/Euclid\ Circular\ A\ Light.ttf");
-  /* src: local('Buenos Aires Bold'), local('BuenosAires-Bold'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.woff2') format('woff2'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.woff') format('woff'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.ttf') format('truetype'); */
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -93,11 +87,6 @@
 @font-face {
   font-family: "Euclid Circular A Regular";
   src: url("/src/assets/fonts/EuclidCircularA/Euclid\ Circular\ A\ Regular.ttf");
-  /* src: local('Buenos Aires Bold'), local('BuenosAires-Bold'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.woff2') format('woff2'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.woff') format('woff'),
-      url('/src/assets/fonts/BuenosAires/BuenosAires-Bold.ttf') format('truetype'); */
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -210,12 +199,12 @@ input::-webkit-inner-spin-button {
 }
 
 ::-moz-selection {
-  background: #000;
+  background: cyan;
   text-shadow: none;
 }
 
 ::selection {
-  background: #000;
+  background: cyan;
   text-shadow: none;
 }
 
@@ -263,7 +252,8 @@ ul,
 li,
 address,
 textarea,
-span {
+span,
+select {
   font-family: "Euclid Circular A Regular";
 }
 
@@ -293,7 +283,6 @@ button {
 }
 
 .heading-secondary {
-  /* font-size: 19px; */
   font-size: 23px;
   font-weight: 500;
 }

@@ -1,0 +1,106 @@
+.whtapp__container {
+  padding: 100px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.whtapp__container h2 {
+  margin-bottom: 30px;
+}
+
+.whtapp__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.whtapp__child--main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 24px 25px;
+  border-radius: 5px;
+  transition: all ease-in-out 0.5s;
+}
+
+.whtapp__child--main:hover {
+  transform: scale(0.97);
+}
+
+.whtapp__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.whtapp__content p {
+  display: inline-flex;
+  gap: 6px;
+  margin-bottom: 7px;
+}
+
+.whtapp__react--icon {
+  width: 30px;
+  height: 30px;
+}
+
+.whtapp__content h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.whtapp__content h2 {
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.whtapp__icon img {
+  width: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .whtapp__container {
+    padding: 50px 20px;
+  }
+
+  .whtapp__container h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .whtapp__wrapper {
+    display: block;
+  }
+
+  .whtapp__child--main {
+    padding: 14px 15px;
+  }
+
+  .whatapp__first {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whtapp__content h2 {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+
+  .whtapp__icon img {
+    width: 17%;
+  }
+}

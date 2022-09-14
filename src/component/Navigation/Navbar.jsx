@@ -93,6 +93,16 @@ function Navbar() {
               About
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/career" className="nav-links" onClick={closeMobileMenu}>
+              Career
+            </Link>
+          </li>
+          <li className="nav-item wht--link">
+            <Link to="/whtapp" className="nav-links" onClick={closeMobileMenu}>
+              WHT APP
+            </Link>
+          </li>
           <li>
             {/* <Link
               to='/sign-up'

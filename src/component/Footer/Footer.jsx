@@ -74,16 +74,16 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer__child">
-          <h3>Legal</h3>
-          <Link to="/">
-            <span>Terms</span> <BsArrowUpRight />
+          <h3>WHT APP</h3>
+          <Link to="/whtapp">
+            <span>OMA WHTAPP</span> <BsArrowUpRight />
           </Link>
-          <Link to="/">
+          {/* <Link to="/">
             <span>Privacy Policy</span> <BsArrowUpRight />
           </Link>
           <Link to="/">
             <span>Disclosures</span> <BsArrowUpRight />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="footer__bottom">

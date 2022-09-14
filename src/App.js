@@ -1,40 +1,86 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+  Navigate,
+} from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Home from "./container/Home/Home";
 import Insights from "./container/Insights/Insights";
 import Services from "./container/Services/Services";
 import Industries from "./container/Industries/Industries";
 import About from "./container/About/About";
 import Error404 from "./container/Error404/Error404";
-import Insight1 from "./container/BlogDetails/Insight-1";
-import Insight2 from "./container/BlogDetails/Insight-2";
-import Insight3 from "./container/BlogDetails/Insight-3";
-import Insight4 from "./container/BlogDetails/Insight-4";
-import Insight5 from "./container/BlogDetails/Insight-5";
-import Insight6 from "./container/BlogDetails/Insight-6";
 import Auditing from "./container/ServicesDetails/Auditing";
 import Tax from "./container/ServicesDetails/Tax";
 import Consulting from "./container/ServicesDetails/Consulting";
 import Cfo from "./container/ServicesDetails/CFO";
-// import Scrolltotop from './component/Scroll-to-top/index'
+import Scrolltotop from "./component/Scroll-to-top/index";
 import Success from "./component/Success/Success";
-// import BlogDetails from "./container/BlogDetails/BlogDetails";
+import BlogDetails from "./container/BlogDetails/BlogDetails";
+import AddEditBlog from "./container/Admin/AddEditBlog";
+import AdminHome from "./container/Admin/AdminHome";
+import { auth } from "./firebase";
+import Auth from "./container/Admin/Auth";
+import Career from "./container/Career/Career";
+import WhtApp from "./container/WhtApp/WhtApp";
+// import { signOut } from "firebase/auth";
 function App() {
+  const [user, setUser] = useState(null);
+  const [active, setActive] = useState();
+  // const navigate = useNavigate();
+
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        setUser(authUser);
+      } else {
+        setUser(null);
+      }
+    });
+  }, []);
+
+  // const handleLogout = () => {
+  //   signOut(auth).then(() => {
+  //     setUser(null);
+  //     setActive("login");
+  //     navigate("/auth");
+  //   });
+  // };
   return (
     <div className="App">
       <Router>
-        {/* <Scrolltotop/> */}
+        <Scrolltotop />
+        <ToastContainer position="top-center" />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/insights" element={<Insights />} />
-          {/* <Route exact path="/insights/:id" element={<BlogDetails />} /> */}
-          <Route exact path="/insights/1" element={<Insight1 />} />
-          <Route exact path="/insights/2" element={<Insight2 />} />
-          <Route exact path="/insights/3" element={<Insight3 />} />
-          <Route exact path="/insights/4" element={<Insight4 />} />
-          <Route exact path="/insights/5" element={<Insight5 />} />
-          <Route exact path="/insights/6" element={<Insight6 />} />
+          <Route exact path="/insights/:id" element={<BlogDetails />} />
+          <Route exact path="/auth" element={<Auth />} />
+          <Route path="/admin/home" element={<AdminHome user={user} />} />
+          <Route
+            path="/create"
+            element={
+              user?.uid ? <AddEditBlog user={user} /> : <Navigate to="/auth" />
+            }
+          />
+          <Route
+            path="/update/:id"
+            element={
+              user?.uid ? (
+                <AddEditBlog user={user} setActive={setActive} />
+              ) : (
+                <Navigate to="/auth" />
+              )
+            }
+          />
+
           <Route exact path="/services" element={<Services />} />
+          <Route exact path="/career" element={<Career/>}/>
+          <Route exact path="/whtapp" element={<WhtApp/>}/>
           <Route exact path="/audit" element={<Auditing />} />
           <Route exact path="/tax" element={<Tax />} />
           <Route exact path="/consulting" element={<Consulting />} />
