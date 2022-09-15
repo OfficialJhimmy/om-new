@@ -29,7 +29,8 @@
 
 .parent__industries--child img {
   margin-bottom: 10px;
-  width: 15%;
+  /* width: 15%; */
+  width: 25%;
 }
 
 .parent__industries--child h3 {
@@ -38,7 +39,7 @@
 }
 
 .parent__industries--child p {
-  font-size: 14px;
+  font-size: 14.5px;
   line-height: 26px;
   text-align: center;
 }

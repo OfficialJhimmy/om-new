@@ -1,10 +1,10 @@
 import React from "react";
 import "./OurIndustries.css";
 import seedling from "../../assets/icons/seedling.png";
-import consumer from "../../assets/icons/consumer.png";
-import socialmedia from "../../assets/icons/social-media.png";
-import billards from "../../assets/icons/billiards.png";
-import hours from "../../assets/icons/24-hours.png";
+import government from "../../assets/icons/government.png";
+import building from "../../assets/icons/buildings.png";
+import financial from "../../assets/icons/financial.png";
+import controller from "../../assets/icons/controller.png";
 
 const OurIndustries = () => {
   return (
@@ -27,7 +27,7 @@ const OurIndustries = () => {
           </p>
         </div>
         <div className="parent__industries--child">
-          <img src={consumer} alt="industries content" />
+          <img src={government} alt="industries content" />
           {/* <h3>Consumer Goods</h3> */}
           <h3>Government</h3>
           <p>
@@ -35,11 +35,11 @@ const OurIndustries = () => {
             inclusion agenda so that in turn they can provide public quality
             services and improve the lives of the citizenry. This was achieved
             by deploying technological support to automate tax returns filing
-            and remittance processes{" "}
+            and remittance processes.
           </p>
         </div>
         <div className="parent__industries--child">
-          <img src={socialmedia} alt="industries content" />
+          <img src={building} alt="industries content" />
           {/* <h3>Multi-Level Marketing</h3> */}
           <h3>Micro, Small, and Medium Enterprises</h3>
           <p>
@@ -52,7 +52,7 @@ const OurIndustries = () => {
           </p>
         </div>
         <div className="parent__industries--child">
-          <img src={billards} alt="industries content" />
+          <img src={controller} alt="industries content" />
           <h3>Gaming Sector</h3>
           <p>
             We also provide services in the gaming sector of the economy. Our
@@ -61,7 +61,7 @@ const OurIndustries = () => {
           </p>
         </div>
         <div className="parent__industries--child">
-          <img src={hours} alt="industries content" />
+          <img src={financial} alt="industries content" />
           <h3>Financial Services</h3>
           <p>
             Our clients in the financial services have benefited from our

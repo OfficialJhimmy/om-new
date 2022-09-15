@@ -48,7 +48,7 @@ const Clients = () => {
     <div className="clients__container">
       <div className="clients__heading">
         <h2>
-          Over 30 companies are growing with us.
+          Over 27 revenue authorities and companies are growing with us.
         </h2>
       </div>
 

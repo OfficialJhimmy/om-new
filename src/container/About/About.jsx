@@ -1,7 +1,6 @@
 import React from "react";
 import ReusableBanner from "../../component/Banner/ReusableBanner";
 import bannerabout from "../../assets/images/insight-banner.jpg";
-import OurStory from "../../component/About-Home/OurStory";
 import Values from "../../component/Values/Values";
 import Contact from "../../component/Contact/Contact";
 import Team from "../../component/Team/Team";
@@ -9,6 +8,7 @@ import Accordion from "../../component/Accordion/Accordion";
 import Footer from "../../component/Footer/Footer";
 import Navbar from "../../component/Navigation/Navbar";
 import Subscribe from "../../component/Subscribe/Subscribe";
+import OurStory from "../../component/About-Home/OurStory";
 
 const About = () => {
   window.scrollTo(0, 0);
