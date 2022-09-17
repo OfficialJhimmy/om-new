@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import newlogo from "../../assets/icons/new-logo.png";
-import { FaFacebookSquare, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import { BsArrowUpRight } from "react-icons/bs";
 import "./Footer.css";
@@ -30,11 +35,18 @@ const Footer = () => {
               <FaLinkedinIn className="footer--icon" />
             </a>
             <a
-              href="https://instagram.com/officialjhimmy"
+              href="https://instagram.com/omassociates.ng?igshid=YmMTA2M2Y="
               className="social-media__links"
             >
               <FaInstagram className="footer--icon" />
             </a>
+            <a
+              href="https://twiter.com/OMAssociates8"
+              className="social-media__links"
+            >
+              <FaTwitter className="footer--icon" />
+            </a>
+
             <a href="mailto:omassociates.consultants@gmail.com">
               <BiMailSend className="footer--icon" />
             </a>

@@ -1,6 +1,6 @@
 import React from "react";
 import mrom from '../../assets/images/mr-om.webp';
-import modupe from '../../assets/images/modupe-.webp';
+import modupe from '../../assets/images/new-modupe.webp';
 import lekan from '../../assets/images/Lekan-Lasisi-Profile-Picture.webp'
 import remi from '../../assets/images/Remi-Bello-Profile-Picture.webp'
 import './Team.css'
@@ -16,7 +16,7 @@ const Team = () => {
         <p>Managing Partner</p>
       </div>
       <div className="meet__team--item">
-        <img src={modupe} alt="team member" className="correct-img"/>
+        <img src={modupe} alt="team member" className="resize-image"/>
         <h2 className="heading-team">Mrs. Modupe Florence Oguntade</h2>
         <p>Partner</p>
       </div>
