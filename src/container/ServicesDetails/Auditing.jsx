@@ -23,7 +23,7 @@ const Auditing = () => {
       <div className="services__details">
         <div className="reusable__grid--top">
           <div className="reusable__grid--asset">
-            <video autoPlay loop muted>
+            <video autoPlay loop muted playsInline>
               <source src={video1} type="video/webm" />
               <source src={video1sub} type="video/mp4" />
               Your browser does not support the video tag.

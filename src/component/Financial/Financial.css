@@ -13,6 +13,10 @@
   justify-content: center;
 }
 
+.financial__content-video video {
+  pointer-events: none;
+}
+
 .financial__content {
   width: 60%;
   align-items: flex-end;

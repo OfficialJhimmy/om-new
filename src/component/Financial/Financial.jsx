@@ -58,7 +58,7 @@ const Financial = () => {
         </div>
       </div>
       <div className="financial__content-video">
-        <video autoPlay loop muted height="600">
+        <video autoPlay loop muted playsInline height="600">
           <source src={industriesvideo} type="video/webm" />
           <source src={industriesvideomp4} type="video/mp4" />
           Your browser does not support the Video tag.

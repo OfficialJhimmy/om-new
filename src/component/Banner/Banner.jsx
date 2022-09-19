@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <>
       <div className="banner__hero">
-        <video autoPlay loop muted className="banner__video">
+        <video autoPlay loop muted playsInline className="banner__video">
           <source src={BannerVideo} type="video/mp4" />
           <source src={BannerVideoWeb} type="video/webm" />
           Your browser does not support the Video tag.

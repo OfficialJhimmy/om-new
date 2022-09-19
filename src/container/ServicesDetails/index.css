@@ -20,6 +20,10 @@
   width: 30%;
 }
 
+.reusable__grid--asset video {
+  pointer-events: none;
+}
+
 .reusable__grid--content {
   width: 65%;
   text-align: end;
