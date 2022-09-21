@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 // import Dropdown from './Dropdown';
 import Logo from "../../assets/icons/new-logo.png";
-import { MdExitToApp } from "react-icons/md";
-import { CgMenuRight } from "react-icons/cg";
+// import { MdExitToApp } from "react-icons/md";
+import { BiLogOut } from "react-icons/bi";
+// import { CgMenuRight } from "react-icons/cg";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -50,9 +52,9 @@ function Navbar() {
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           {click ? (
-            <MdExitToApp className="menu-icon__nav" />
+            <BiLogOut className="menu-icon__nav" />
           ) : (
-            <CgMenuRight className="menu-icon__nav" />
+            <HiOutlineMenuAlt2 className="menu-icon__nav" />
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>

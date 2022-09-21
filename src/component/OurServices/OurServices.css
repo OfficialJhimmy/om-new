@@ -16,7 +16,7 @@
   width: 60%;
 }
 
-.ourservices__item  {
+.ourservices__item {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 14px 17px;
   transition: all ease-in-out 0.5s;
@@ -26,12 +26,12 @@
   transform: scale(0.97);
 }
 
-.ourservices__item a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.ourservices__item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .ourservices__item img {
@@ -39,12 +39,12 @@
 }
 
 .ourservices__heading {
-    font-size: 20px;
-    margin-bottom: 9px;
+  font-size: 20px;
+  margin-bottom: 9px;
 }
 
 .ourservices__item p {
-    font-size: 14.3px;
+  font-size: 14.3px;
 }
 
 .ourservices__grid--right {
@@ -55,8 +55,8 @@
 }
 
 .ourservices__grid--right h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -66,46 +66,46 @@
     padding: 40px 20px;
   }
 
-  
   .ourservices__grid--left {
     display: block;
     width: 100%;
   }
-  
+
   .ourservices__item {
-      margin-bottom: 40px;
-      text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 22px 17px;
   }
-  
+
   .ourservices__item img {
-    width: 20%;
+    width: 15%;
   }
-  
+
   .ourservices__heading {
-      font-size: 18px;
-      /* font-weight: 700; */
+    font-size: 18px;
+    /* font-weight: 700; */
   }
-  
+
   .ourservices__item p {
-      font-size: 13px;
+    font-size: 13px;
   }
-  
+
   .ourservices__grid--right {
     width: 100%;
     align-items: flex-start;
     margin-bottom: 40px;
   }
-  
+
   .ourservices__grid--right h2 {
-      font-size: 21px;
-      margin-bottom: 20px;
+    font-size: 21px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
-    .ourservices__home {
-        flex-direction: column-reverse;
-        margin-top: 20px;
-        padding: 40px 50px;
-      }
+  .ourservices__home {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    padding: 40px 50px;
+  }
 }

@@ -13,7 +13,7 @@ const OurServices = () => {
       <div className="ourservices__grid--left">
         <div className="ourservices__item">
           <Link to="/audit">
-            <img src={research} alt="" />
+            <img src={research} alt="our-services" />
             <h2 className="ourservices__heading">Audit & Assurance</h2>
             <p>
               We provide audit services targeted at enhancing your financial
@@ -26,7 +26,7 @@ const OurServices = () => {
         </div>
         <div className="ourservices__item">
           <Link to="/tax">
-            <img src={budget} alt="" />
+            <img src={budget} alt="our-services" />
             <h2 className="ourservices__heading">Tax Auditory</h2>
             <p>
               Quality individual and business tax assessment preparation and
@@ -38,7 +38,7 @@ const OurServices = () => {
         </div>
         <div className="ourservices__item">
           <Link to="/consulting">
-            <img src={team} alt="" />
+            <img src={team} alt="our-services" />
             <h2 className="ourservices__heading">Consulting</h2>
             <p>
               O.M. Associates has capability to solve complex business issues
@@ -50,7 +50,7 @@ const OurServices = () => {
         </div>
         <div className="ourservices__item">
           <Link to='/cfo'>
-            <img src={creative} alt="" />
+            <img src={creative} alt="our-services" />
             <h2 className="ourservices__heading">CFO Services</h2>
             <p>
               "The Outsourced CFO". We have a team of professional CFOs with

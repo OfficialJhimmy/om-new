@@ -2,6 +2,7 @@
   "name": "om-associates",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://omassociates.com.ng",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@pathofdev/react-tag-input": "^1.0.7",

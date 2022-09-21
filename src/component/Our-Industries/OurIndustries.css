@@ -58,7 +58,7 @@
   }
 
   .parent__industries--child {
-    margin-bottom: 36px;
+    margin-bottom: 45px;
   }
 
   .parent__industries--child img {
@@ -70,6 +70,10 @@
     font-size: 17px;
     margin-top: 5px;
     margin-bottom: 10px;
+  }
+
+  .parent__industries--child p {
+    font-size: 14px;
   }
 }
 

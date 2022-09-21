@@ -1,6 +1,6 @@
 import React from "react";
-import pin from '../../assets/icons/pin.png'
-import phone from '../../assets/icons/smartphone-call.png'
+import pin from '../../assets/icons/placeholder.png'
+import phone from '../../assets/icons/telephone.png'
 import mail from '../../assets/icons/email.png'
 import './Contact.css'
 const Contact = () => {

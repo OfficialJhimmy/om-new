@@ -36,14 +36,14 @@
 
 .input__sub-btn {
   background-color: #184e77;
-  border-radius: 7px;
-  padding: 20px 35px;
+  border-radius: 7px !important;
+  padding: 20px 35px !important;
   color: #f8f9fa;
   transition: all ease-in-out 0.5s;
   cursor: pointer;
   outline: none;
   border: none;
-  font-size: 14px;
+  font-size: 14px !important;
   width: 20%;
 }
 
@@ -70,7 +70,7 @@
   }
 
   .input__sub-btn {
-    padding: 20px 35px;;
-    width: 30%;
+    padding: 20px 35px !important;
+    width: 30% !important;
   }
 }
