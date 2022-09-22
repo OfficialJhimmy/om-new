@@ -66,6 +66,10 @@
     .insight-single__top {
       margin-bottom: 35px;
     }
+
+    .events__page--image img {
+      width: 65%;
+    }
   
     .insight-single__middle h2 {
       font-size: 18px;

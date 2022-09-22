@@ -73,6 +73,7 @@
     background-image: none;
     background-color: #ccc;
     height: 80px;
+    padding-bottom: 0;
   }
 
   .nav-menu {
