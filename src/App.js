@@ -27,6 +27,9 @@ import { auth } from "./firebase";
 import Auth from "./container/Admin/Auth";
 import Career from "./container/Career/Career";
 import WhtApp from "./container/WhtApp/WhtApp";
+import AddEditEvent from "./container/Admin/AddEditEvent";
+import Events from "./container/Events/Events";
+import EventsDetails from "./container/Events/EventsDetails";
 // import { signOut } from "firebase/auth";
 function App() {
   const [user, setUser] = useState(null);
@@ -59,6 +62,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/insights" element={<Insights />} />
           <Route exact path="/insights/:id" element={<BlogDetails />} />
+          <Route exact path="/events/:id" element={<EventsDetails />} />
           <Route exact path="/auth" element={<Auth />} />
           <Route path="/admin/home" element={<AdminHome user={user} />} />
           <Route
@@ -78,9 +82,27 @@ function App() {
             }
           />
 
+          <Route
+            path="/create-events"
+            element={
+              user?.uid ? <AddEditEvent user={user} /> : <Navigate to="/auth" />
+            }
+          />
+          <Route
+            path="/update-events/:id"
+            element={
+              user?.uid ? (
+                <AddEditEvent user={user} setActive={setActive} />
+              ) : (
+                <Navigate to="/auth" />
+              )
+            }
+          />
+
           <Route exact path="/services" element={<Services />} />
-          <Route exact path="/career" element={<Career/>}/>
-          <Route exact path="/whtapp" element={<WhtApp/>}/>
+          <Route exact path="/career" element={<Career />} />
+          <Route exact path="/events" element={<Events />} />
+          <Route exact path="/whtapp" element={<WhtApp />} />
           <Route exact path="/audit" element={<Auditing />} />
           <Route exact path="/tax" element={<Tax />} />
           <Route exact path="/consulting" element={<Consulting />} />

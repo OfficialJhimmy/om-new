@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="contact__content">
           <img src={pin} alt="address icon" />
           <address>
-            Suite 12, Ruby Block All Seasons Plaza 24, Lateef Jakande Road
+            Suite 11 & 12, Ruby Block All Seasons Plaza 24, Lateef Jakande Road
             Agidingbi, Ikeja Lagos, Nigeria
           </address>
         </div>

@@ -18,31 +18,35 @@ const Footer = () => {
         <div className="footer__child-start">
           <img src={newlogo} alt="Logo" />
           <address>
-            Suite 12, Ruby Block All Seasons Plaza 24, Lateef Jakande Road
+            Suite 11 & 12, Ruby Block All Seasons Plaza 24, Lateef Jakande Road
             Agidingbi, Ikeja Lagos, Nigeria
           </address>
           <div className="footer__social-icons">
             <a
               href="https://facebook.com/officialjhimmy"
               className="social-media__links"
+              target="_blank" rel="noreferrer"
             >
               <FaFacebookSquare className="footer--icon" />
             </a>
             <a
               href="https://linkedin.com/officialjhimmy"
               className="social-media__links"
+              target="_blank" rel="noreferrer"
             >
               <FaLinkedinIn className="footer--icon" />
             </a>
             <a
               href="https://instagram.com/omassociates.ng?igshid=YmMTA2M2Y="
               className="social-media__links"
+              target="_blank" rel="noreferrer"
             >
               <FaInstagram className="footer--icon" />
             </a>
             <a
               href="https://twiter.com/OMAssociates8"
               className="social-media__links"
+              target="_blank" rel="noreferrer"
             >
               <FaTwitter className="footer--icon" />
             </a>

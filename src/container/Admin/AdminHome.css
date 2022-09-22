@@ -8,6 +8,7 @@
   /* grid-template-rows: ; */
   grid-column-gap: 35px;
   grid-row-gap: 40px;
+  margin-bottom: 100px;
 }
 
 .admin__insight--parent h2 {
@@ -49,6 +50,16 @@
 
 .admin__home--icon:hover {
   color: rgb(3, 85, 3);
+}
+
+.split__date--title h2 {
+  display: flex;
+  align-items: center;
+}
+
+.events__icon {
+  margin-right: 10px;
+  color: #333;
 }
 
 /* Media Query */

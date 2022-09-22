@@ -9,6 +9,8 @@
 
 .whtapp__container h2 {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .whtapp__wrapper {
@@ -69,6 +71,29 @@
   justify-content: center;
 }
 
+.whtapp__top--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.button__whtapp {
+  display: inline-flex;
+  font-size: 14px;
+  background-color: #184e77;
+  border-radius: 5px;
+  padding: 15px 16px;
+  color: #f8f9fa;
+  transition: all ease-in-out 0.5s;
+}
+
+.button__whtapp:hover {
+  transform: scale(0.95);
+}
+
+
 @media screen and (max-width: 1024px) {
   .whtapp__container {
     padding: 50px 20px;
@@ -102,5 +127,13 @@
 
   .whtapp__icon img {
     width: 17%;
+  }
+
+  .whtapp__top--content {
+    margin-bottom: 40px;
+  }
+
+  .button__whtapp {
+    font-size: 13px;
   }
 }

@@ -100,6 +100,11 @@ function Navbar() {
               Career
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/events" className="nav-links" onClick={closeMobileMenu}>
+              Events
+            </Link>
+          </li>
           <li className="nav-item wht--link">
             <Link to="/whtapp" className="nav-links" onClick={closeMobileMenu}>
               WHT APP

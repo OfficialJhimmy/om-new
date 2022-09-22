@@ -6,15 +6,26 @@ import prototype from "../../assets/images/prototype.png";
 import upload from "../../assets/images/folder.png";
 import approval from "../../assets/images/verified.png";
 import Navbar from "../../component/Navigation/Navbar";
-import Footer from '../../component/Footer/Footer'
-import Accordion from '../../component/Accordion/Accordion'
+import Footer from "../../component/Footer/Footer";
+import Accordion from "../../component/Accordion/Accordion";
+import ButtonOthers from "../../component/Button/ButtonOthers";
 
 const WhtApp = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="whtapp__container">
-        <h2>A Step-by-Step Guide on how to use the OMA WHTAPP</h2>
+        <div className="whtapp__top--content">
+          <h2>A Step-by-Step Guide on how to use the OMA WHTAPP</h2>
+            <a
+              href="https://omappsng.com/jtbwht/wht/r/omapps/signin?"
+              className="button__whtapp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open OMA WHTAPP
+            </a>
+            </div>
         <div className="whtapp__wrapper">
           <div className="whatapp__first">
             <div className="whtapp__child--main">
@@ -164,8 +175,8 @@ const WhtApp = () => {
           </div>
         </div>
       </div>
-      <Accordion/>
-      <Footer/>
+      <Accordion />
+      <Footer />
     </>
   );
 };

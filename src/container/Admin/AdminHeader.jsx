@@ -49,6 +49,16 @@ const AdminHeader = () => {
             Create New Insight
           </li>
         </Link>
+        <Link to="/create-events">
+          <li
+            className={`admin__nav-item admin__nav-link ${
+              active === "create" ? "active" : ""
+            }`}
+            onClick={() => setActive("create")}
+          >
+            Create New Event
+          </li>
+        </Link>
         {userId ? (
           <div className="admin__profile--flex">
             <p className="admin__nav-item"><AiOutlineUser />{user?.displayName}</p>
