@@ -19,11 +19,11 @@ const Footer = () => {
           <img src={newlogo} alt="Logo" />
           <address>
             Suite 11 & 12, Ruby Block All Seasons Plaza 24, Lateef Jakande Road
-            Agidingbi, Ikeja Lagos, Nigeria
+            Agidingbi, Ikeja Lagos, Nigeria.
           </address>
           <div className="footer__social-icons">
             <a
-              href="https://facebook.com/officialjhimmy"
+              href="https://facebook.com/profile.php?id=100064158423814"
               className="social-media__links"
               target="_blank" rel="noreferrer"
             >
