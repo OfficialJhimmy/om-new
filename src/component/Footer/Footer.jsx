@@ -30,7 +30,7 @@ const Footer = () => {
               <FaFacebookSquare className="footer--icon" />
             </a>
             <a
-              href="https://linkedin.com/officialjhimmy"
+              href="https://linkedin.com/in/o-m-associates-19a907244"
               className="social-media__links"
               target="_blank" rel="noreferrer"
             >
@@ -44,7 +44,7 @@ const Footer = () => {
               <FaInstagram className="footer--icon" />
             </a>
             <a
-              href="https://twiter.com/OMAssociates8"
+              href="https://twitter.com/OMAssociates8"
               className="social-media__links"
               target="_blank" rel="noreferrer"
             >

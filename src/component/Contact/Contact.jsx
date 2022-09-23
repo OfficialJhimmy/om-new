@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
         <div className="contact__content">
           <img src={phone} alt="Phone icon" />
-          <a href="tel:++2348173290200">+234 817 329 0200 / +234 805 787 5517</a>
+          <a href="tel:++2348173290200">+234 807 048 0003/ +234 805 787 5517</a>
         </div>
         <div className="contact__content">
           <img src={mail} alt="Email Icon" />

@@ -27,7 +27,7 @@ const OurServices = () => {
         <div className="ourservices__item">
           <Link to="/tax">
             <img src={budget} alt="our-services" />
-            <h2 className="ourservices__heading">Tax Auditory</h2>
+            <h2 className="ourservices__heading">Tax Advisory</h2>
             <p>
               Quality individual and business tax assessment preparation and
               proactive tax planning services guarantee tax compliance for our
